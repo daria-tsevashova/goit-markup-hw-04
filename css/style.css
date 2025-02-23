@@ -130,12 +130,13 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 
 .current {
@@ -171,12 +172,13 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
   padding: 24px 0;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 /* #endregion Header */
 
@@ -186,12 +188,8 @@ button {
   margin: 0 auto;
   background: #2e2f42;
   padding: 188px 0;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero/people-office\ 1.jpg);
-  background-position: center;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office\ 1.jpg);
+    background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -228,7 +226,7 @@ button {
 .button:hover,
 .button:focus {
   background: #404bbf;
-  transition: transform 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 /* #endregion Hero */
@@ -338,7 +336,7 @@ button {
 }
 .item-icon {
   display: flex;
-transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
   width: 40px;
   height: 40px;
 }
@@ -351,6 +349,7 @@ transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link:hover,
@@ -457,10 +456,15 @@ transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 100px 0;
 }
 
-.footer-list {
+.footer-box{
+  display: flex;
+  align-items: baseline;
+}
+
+/* .footer-list {
   display: flex;
   gap: 120px;
-}
+} */
 
 .footer-item {
   display: block;
@@ -469,6 +473,7 @@ transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-right: 120px
 }
 
 .footer-logo .logo-part {
@@ -490,12 +495,12 @@ transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-text {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
-  max-width: 264px;
+  color: #fff;
+   
   margin-bottom: 16px;
 }
 
@@ -503,6 +508,22 @@ transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 16px; 
+}
+
+.footer-icon-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus{
+  background-color: #31d0aa;
 }
 /* #endregion Footer */
